@@ -1,0 +1,47 @@
+
+**Show Document**
+----
+Returns info about a document/s 
+
+* **URL**
+
+  /documents/:document
+
+* **Method:**
+  
+  `GET`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+   `document=[string]`
+
+* **Data Params**
+
+  None?
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    **Content:** `{ document : "info.txt", body : "....." }`
+ 
+* **Error Response:**
+
+  * **Code:** 412 NOT FOUND <br />
+    **Content:** `{ error : "This document does not exist" }`
+
+  OR
+
+  * **Code:** 404 UNPROCESSABLE ENTRY <br />
+    **Content:** `{ error : "Invalid Characters" }`
+
+* **Sample Call:**
+
+  'This could be added once more of my own research is done' 
+
+* **Notes:**
+
+  <https://gist.github.com/iros/3426278#file-api-md was used for reference during this assignment.>
+  
+  <Is the structure above similar to the correct structure ?
